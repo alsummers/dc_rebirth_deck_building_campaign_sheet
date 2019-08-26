@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>DC Rebirth Campaign Sheets</title>
+
+  </head>
+  <body>
+      <div class="container">
+          <div class="row text-center">
+              <h1>DC Rebirth Campaign Log</h1>
+          </div>
+        <div class="row text-center">
+            <div class="col">
+                <table>
+                        <tr>
+                            <th>Character</th>
+                            <th>Signature Cards Gained</th>
+                        </tr>
+                    <tbody id="characters">
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="col">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Location Damage</th>
+                    </tr>
+                    <tbody id="locations">
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="col">
+                <table>
+                    <tr>
+                        <th>Scenario #</th>
+                        <th>Attempts Needed</th>
+                    </tr>
+                    <tbody id="scenarios">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                Side Mission
+                            </th>
+                            <th>
+                                Completed in Scenario #
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="sideMissions">
+                        <tr>
+                            <td>Recruit the Ray</td>
+                            <td><input id="ray" type="number" min="0" max="8"></td>
+                        </tr>
+                        <tr>
+                            <td>Recruit Krypto</td>
+                            <td><input id="krypto" type="number" min="0" max="8"></td>
+                        </tr>
+                        <tr>
+                            <td>Repairs</td>
+                            <td><input id="repairs" type="number" min="0" max="8"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row text-center">
+            Victory Score: <div id="finalScore"></div>
+        </div>
+        <div class="row text-center">
+            <button type="button" id="save">Save</button>
+            <button type="button" id="clear">New Campaign</button>
+        </div>
+        <div class="row text-center" id="saveMessage"></div>
+    </div>
+  </body>
+</html>
